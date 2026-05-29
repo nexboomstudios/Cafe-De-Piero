@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Explore our full artisan brunch menu — breakfast, vegan, drinks & more at Cafe De Piero.">
+  <title>Menu | Cafe De Piero</title>
+  
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo" aria-label="Cafe De Piero Home">
+        <img src="images/logo.png" alt="Cafe De Piero logo" class="logo-img">
+      </a>
+      
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="index.html#locations">Locations</a>
+        <a href="events.html">Events</a>
+        <a href="index.html#gallery">Gallery</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      
+      <div class="nav-actions">
+        <a href="menu.html" class="cta-button nav-cta">View Menu</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="menu-page-hero">
+      <div class="container">
+        <h1>Our Full Menu</h1>
+        <p>Everything made fresh, with local ingredients and a whole lot of love.</p>
+      </div>
+    </section>
+
+    <section class="menu-page-content">
+      <div class="container">
+        <div class="menu-tabs">
+          <button class="tab-btn active" data-tab="breakfast">Breakfast</button>
+          <button class="tab-btn" data-tab="brunch">Brunch</button>
+          <button class="tab-btn" data-tab="vegan">Vegan</button>
+          <button class="tab-btn" data-tab="drinks">Drinks</button>
+          <button class="tab-btn" data-tab="kids">Kids</button>
+        </div>
+
+        <div class="tab-panels">
+          <div class="tab-panel active" id="breakfast">
+            <div class="menu-items-grid">
+              <article class="menu-item-card">
+                <div class="menu-item-image">
+                  <img src="https://images.unsplash.com/photo-1533089860892-a7c6f10a081a?w=600&q=80" alt="Full Breakfast" loading="lazy">
+                </div>
+                <div class="menu-item-info">
+                  <h3>Full Breakfast</h3>
+                  <p>Local sausages, free-range eggs, smoked bacon, field mushrooms, baked beans, grilled tomato & sourdough toast</p>
+                  <div class="menu-item-footer">
+                    <span class="price">£14.50</span>
+                    <span class="dietary-icons">
+                      <span class="dietary-icon" title="Contains meat">M</span>
+                      <span class="dietary-icon" title="Gluten Free option">GF*</span>
+                    </span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-item-card">
+                <div class="menu-item-image">
+                  <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=600&q=80" alt="Avocado & Eggs" loading="lazy">
+                </div>
+                <div class="menu-item-info">
+                  <h3>Avocado & Eggs</h3>
+                  <p>Smashed avocado, poached eggs, chilli flakes, lime & toasted sourdough</p>
+                  <div class="menu-item-footer">
+                    <span class="price">£11.50</span>
+                    <span class="dietary-icons">
+                      <span class="dietary-icon vegetarian-icon" title="Vegetarian">V</span>
+                    </span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-item-card">
+                <div class="menu-item-image">
+                  <img src="https://images.unsplash.com/photo-1551218372-a8789b81b253?w=600&q=80" alt="Eggs Royale" loading="lazy">
+                </div>
+                <div class="menu-item-info">
+                  <h3>Eggs Royale</h3>
+                  <p>Smoked salmon, poached eggs, hollandaise on English muffin</p>
+                  <div class="menu-item-footer">
+                    <span class="price">£13.90</span>
+                    <span class="dietary-icons">
+                      <span class="dietary-icon" title="Contains fish">F</span>
+                    </span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-item-card">
+                <div class="menu-item-image">
+                  <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=600&q=80" alt="Granola Bowl" loading="lazy">
+                </div>
+                <div class="menu-item-info">
+                  <h3>House Granola Bowl</h3>
+                  <p>Homemade granola, Greek yoghurt, seasonal berries & honey</p>
+                  <div class="menu-item-footer">
+                    <span class="price">£9.50</span>
+                    <span class="dietary-icons">
+                      <span class="dietary-icon vegetarian-icon" title="Vegetarian">V</span>
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="brunch">
+            <div class="menu-items-grid">
+              <article class="menu-item-card">
+                <div class="menu-item-image">
+                  <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80" alt="Vegan Junkie" loading="lazy">
+                </div>
+                <div class="menu-item-info">
+                  <h3>Vegan Junkie</h3>
+                  <p>Plant-based patty, cashew cheese, crispy onions, fries</p>
+                  <div class="menu-item-footer">
+                    <span class="price">£12.90</span>
+                    <span class="dietary-icons">
+                      <span class="dietary-icon vegan-icon" title="Vegan">VG</span>
+                    </span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-item-card">
+                <div class="menu-item-image">
+                  <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=600&q=80" alt="Gyros Plate" loading="lazy">
+                </div>
+                <div class="menu-item-info">
+                  <h3>Gyros Plate</h3>
+                  <p>Grilled chicken, tzatziki, warm pita, Greek salad</p>
+                  <div class="menu-item-footer">
+                    <span class="price">£13.90</span>
+                    <span class="dietary-icons">
+                      <span class="dietary-icon" title="Contains meat">M</span>
+                    </span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-item-card">
+                <div class="menu-item-image">
+                  <img src="https://images.unsplash.com/photo-1550304943-4f24f54ddde9?w=600&q=80" alt="Brunch Burger" loading="lazy">
+                </div>
+                <div class="menu-item-info">
+                  <h3>Brunch Burger</h3>
+                  <p>Dry-aged beef, fried egg, bacon jam, brioche bun</p>
+                  <div class="menu-item-footer">
+                    <span class="price">£15.50</span>
+                    <span class="dietary-icons">
+                      <span class="dietary-icon" title="Contains meat">M</span>
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="vegan">
+            <div class="menu-items-grid">
+              <article class="menu-item-card">
+                <div class="menu-item-image">
+                  <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80" alt="Vegan Buddha Bowl" loading="lazy">
+                </div>
+                <div class="menu-item-info">
+                  <h3>Buddha Bowl</h3>
+                  <p>Quinoa, roasted veg, avocado, tahini dressing</p>
+                  <div class="menu-item-footer">
+                    <span class="price">£12.50</span>
+                    <span class="dietary-icons">
+                      <span class="dietary-icon vegan-icon" title="Vegan">VG</span>
+                      <span class="dietary-icon gf-icon" title="Gluten Free">GF</span>
+                    </span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-item-card">
+                <div class="menu-item-image">
+                  <img src="https://images.unsplash.com/photo-1574484284002-952d92456975?w=600&q=80" alt="Vegan Pancakes" loading="lazy">
+                </div>
+                <div class="menu-item-info">
+                  <h3>Vegan Pancakes</h3>
+                  <p>Fluffy plant-based pancakes, maple syrup, berries</p>
+                  <div class="menu-item-footer">
+                    <span class="price">£10.90</span>
+                    <span class="dietary-icons">
+                      <span class="dietary-icon vegan-icon" title="Vegan">VG</span>
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="drinks">
+            <div class="menu-items-grid">
+              <article class="menu-item-card">
+                <div class="menu-item-image">
+                  <img src="https://images.unsplash.com/photo-1504753793650-d4a2b783c15e?w=600&q=80" alt="Dirty Den" loading="lazy">
+                </div>
+                <div class="menu-item-info">
+                  <h3>Egg</h3>
+                  <p>Double espresso over ice with oat milk & maple</p>
+                  <div class="menu-item-footer">
+                    <span class="price">£4.50</span>
+                    <span class="dietary-icons">
+                      <span class="dietary-icon vegan-icon" title="Vegan">VG</span>
+                    </span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-item-card">
+                <div class="menu-item-image">
+                  <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80" alt="Flat White" loading="lazy">
+                </div>
+                <div class="menu-item-info">
+                  <h3>Flat White</h3>
+                  <p>Double ristretto, velvety microfoam</p>
+                  <div class="menu-item-footer">
+                    <span class="price">£3.80</span>
+                    <span class="dietary-icons">
+                      <span class="dietary-icon" title="Vegan option">V*</span>
+                    </span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-item-card">
+                <div class="menu-item-image">
+                  <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&q=80" alt="Matcha Latte" loading="lazy">
+                </div>
+                <div class="menu-item-info">
+                  <h3>Matcha Latte</h3>
+                  <p>Ceremonial grade matcha, steamed milk</p>
+                  <div class="menu-item-footer">
+                    <span class="price">£4.20</span>
+                    <span class="dietary-icons">
+                      <span class="dietary-icon vegan-icon" title="Vegan option">VG*</span>
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="kids">
+            <div class="menu-items-grid">
+              <article class="menu-item-card">
+                <div class="menu-item-image">
+                  <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80" alt="Mini Breakfast" loading="lazy">
+                </div>
+                <div class="menu-item-info">
+                  <h3>Mini Breakfast</h3>
+                  <p>Scrambled egg, sausage, beans & toast</p>
+                  <div class="menu-item-footer">
+                    <span class="price">£7.50</span>
+                    <span class="dietary-icons">
+                      <span class="dietary-icon" title="Contains meat">M</span>
+                    </span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-item-card">
+                <div class="menu-item-image">
+                  <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600&q=80" alt="Pancake Stack" loading="lazy">
+                </div>
+                <div class="menu-item-info">
+                  <h3>Pancake Stack</h3>
+                  <p>Three mini pancakes, Nutella, banana & cream</p>
+                  <div class="menu-item-footer">
+                    <span class="price">£6.90</span>
+                    <span class="dietary-icons">
+                      <span class="dietary-icon vegetarian-icon" title="Vegetarian">V</span>
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-logo">Cafe De Piero</span>
+          <p>Proudly local and fiercely independent.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="index.html#locations">Locations</a>
+          <a href="events.html">Events</a>
+        </div>
+        <div class="footer-info">
+          <h4>Contact</h4>
+          <a href="mailto:nexboomstudio@gmail.com">nexboomstudio@gmail.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Cafe De Piero.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-sticky-bar">
+    <a href="tel:" class="sticky-action">
+      <span class="sticky-icon">📞</span>
+      <span>Call</span>
+    </a>
+    <a href="menu.html" class="sticky-action">
+      <span class="sticky-icon">📋</span>
+      <span>Menu</span>
+    </a>
+    <a href="index.html#locations" class="sticky-action">
+      <span class="sticky-icon">📍</span>
+      <span>Find Us</span>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
